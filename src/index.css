@@ -1,13 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-size: 14px;
+  font-family: 
+    -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    "Roboto", 
+    "Oxygen",
+    "Ubuntu", 
+    "Cantarell", 
+    "Fira Sans", 
+    "Droid Sans", 
+    "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, h3, p {
+	margin-top: 0;
 }
+
+@media (max-width: 700px) {
+  .App {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 25px;
+  /* max-width: 700px; */
+  /* text-align: center; */
+}
+
+.highlightOrange {
+  color: rgb(255, 239, 212);
+}
+
+.highlightPurple {
+  color: #BFA3FF;
+}
+
+.highlightRed {
+  color: #F5989B;
+}
+
+.highlightBlue {
+  color: #89DEE8;
+}
+
+/* TodaysDate Component */
+
+#todays-date {
+  background: #89DEE8;
+  text-align: center;
+  padding: 20px;
+}
+
+#todays-date h1 {
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+
+#todays-date h2 {
+  margin-bottom: 0;
+}
+
+#todays-date p {
+  font-weight: bold;
+}
+
+.sunriseSunset {
+  width: 50px;
+  /* padding: 25px; */
+}
+
+/* Search Component */
+
+#search {
+  background: #FFD896;
+  margin: 7px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.searchBox {
+  font-family: inherit;
+  font-size: inherit;
+  color: #F5989B;
+  background: none;
+  padding: 8px;
+  /* border-radius: 10px; */
+  outline: none;
+  border: none;
+  /* border-bottom-color: white; */
+  border-bottom: 1px solid white;
+}
+
+.searchBox:focus {
+  border-bottom: 2px solid #BFA3FF;
+  /* border:  2px solid; */
+}
+
+::placeholder {
+  color: rgb(255, 247, 247);
+}
+
+.button {
+  display: block;
+  font-weight: bold;
+  color: #F5989B;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #F5989B;
+  color: white;
+}
+
+/* TodaysWeather Component */
+
+#todays-weather {
+  background: #BFA3FF;
+  padding: 20px;
+  text-align: center;
+}
+
+#todays-weather h1 {
+  font-family: "Rubik";
+  font-size: 120px;
+  line-height: 100%;
+  padding-left: 40px;
+  margin: 0;
+}
+
+#todays-weather h2 {
+  margin-bottom: 0;
+}
+
+#todays-weather .degrees {
+  font-weight: 100;
+}
+
+#todays-details {
+  background: #ABFF96;
+  padding: 20px;
+  text-align: center;
+}
+
+#todays-details h3 {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+/* colors
+
+orange: #FFD896
+red: #F5989B
+purple: #BFA3FF
+blue: #89DEE8
+green: #ABFF96 */
